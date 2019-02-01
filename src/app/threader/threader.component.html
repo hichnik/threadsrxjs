@@ -1,0 +1,17 @@
+<div class="componentBody">
+  <div class="header">
+      <button (click)="fetchData()">Start</button>
+      <button (click)="fetchData(50)">Start (50)</button>
+      <button (click)="stopFetch()">Stop current</button>
+      <button (click)="finishAll()">Finish all</button>
+      <button (click)="stopAll()">Stop all</button>
+      <div class="addanother">Add another by:</div>
+      <button disabled>SwitchMap</button>
+      <button disabled>MergeMap</button>
+      <button disabled>ConcatMap</button>
+      <button disabled>ExhaustMap</button>
+  </div>
+  <div class="content">
+    <div class="number" *ngFor="let numberData of randomData">{{ numberData }}</div>
+  </div>
+</div>
